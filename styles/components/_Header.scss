@@ -1,27 +1,38 @@
 @use "../abstracts/colors" as var;
 
-.header{
-    width: 100vw;
-    background-color: var.$elegance-1-hex;
-    padding: 3rem;
-    font-family: 'Kalam', sans-serif;
-   font-weight: bold;
-   
-    p{
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  background-color: var.$elegance-1-hex;
+  padding: 3rem;
+  font-family: "Kalam", sans-serif;
+  font-weight: bold;
+
+  p {
+    color: var.$elegance-5-hex;
+    font-size: xx-large;
+
+    span {
+      color: var.$elegance-2-hex;
+      &:hover {
         color: var.$elegance-5-hex;
-        font-size: xx-large;
-       
-        span{
-            color: var.$elegance-2-hex;
-            &:hover{
-                color: var.$elegance-5-hex;
-            }
-        }
+      }
     }
+  }
+  ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    color: var.$elegance-5-rgba;
+    font-size: large;
+    padding-left: 1rem;
+  }
+  @media only screen and (max-width: 466px) {
+    li {
+      font-size: small;
+    }
+  }
 }
-
-.footer{
-
-background-color: var.$elegance-4-hex;
-padding: 2rem;
-}   

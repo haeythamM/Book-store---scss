@@ -2,12 +2,14 @@
 
 .footer {
   display: flex;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   background-color: var.$elegance-4-hex;
-  padding: 1rem;
+  padding: 2rem;
+ 
   text-align: center;
   color: var.$elegance-5-hex;
+  flex-wrap: wrap;
 
   .footer-content {
     margin-bottom: 1rem;

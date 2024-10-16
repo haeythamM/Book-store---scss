@@ -27,7 +27,6 @@
 
 html, body {
   background-color: #bfbe9c;
-  height: 100vh;
 }
 
 .container {
@@ -36,15 +35,13 @@ html, body {
   flex-grow: 1;
   min-height: 100vh;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .main {
   flex-grow: 1;
   text-align: justify;
   padding: 3rem;
+  background-color: aquamarine;
 }
 .main .maintitle {
   display: flex;
@@ -52,20 +49,16 @@ html, body {
 }
 .main .articles {
   display: flex;
-  max-width: 100%;
-  margin-left: 1rem;
 }
 .main .articles .sideBar {
   display: block;
   width: 40%;
   background-color: rgb(37, 37, 37);
   color: aliceblue;
-  margin-right: 1rem;
   padding: 1rem;
   box-sizing: border-box;
 }
 .main .articles .sideBar .video {
-  width: 100%;
   height: auto;
   display: block;
   margin-bottom: 10px;
@@ -76,19 +69,29 @@ html, body {
   color: aliceblue;
   text-align: center;
 }
-.main .articles article {
-  flex-grow: 1;
+.main article {
   margin-left: 1rem;
+}
+.main .artContaner {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media only screen and (max-width: 1000px) {
+  .main .artContaner {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .footer {
   display: flex;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   background-color: #4a4633;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
   color: #bfbe9c;
+  flex-wrap: wrap;
 }
 .footer .footer-content {
   margin-bottom: 1rem;
@@ -155,7 +158,10 @@ html, body {
 }
 
 .header {
-  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   background-color: #802922;
   padding: 3rem;
   font-family: "Kalam", sans-serif;
@@ -171,10 +177,18 @@ html, body {
 .header p span:hover {
   color: #bfbe9c;
 }
-
-.footer {
-  background-color: #4a4633;
-  padding: 2rem;
+.header ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  color: rgb(191, 190, 156);
+  font-size: large;
+  padding-left: 1rem;
+}
+@media only screen and (max-width: 466px) {
+  .header li {
+    font-size: small;
+  }
 }
 
 .image {
@@ -182,6 +196,7 @@ html, body {
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 2rem;
 }
 .image img {
@@ -191,15 +206,39 @@ html, body {
   box-shadow: hsl(0, 0%, 0%) 1px 1px 3px;
   border-radius: 5px;
 }
-@media only screen and (max-width: 718px) {
+@media only screen and (min-width: 1450px) {
   .image img {
-    width: 500px;
+    width: 800px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1098px) {
+  .image img {
+    width: 400px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 824px) {
+  .image img {
+    width: 470px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 742px) {
+  .image img {
+    width: 450px;
     height: auto;
   }
 }
 @media only screen and (max-width: 600px) {
   .image img {
     width: 400px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 506px) {
+  .image img {
+    width: 350px;
     height: auto;
   }
 }

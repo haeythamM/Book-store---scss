@@ -5,40 +5,63 @@
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 2rem;
 
   img {
-    width: 600px;  
+    width: 600px;
     height: auto;
-    border: var.$adjusted-border-frame  solid 15px;  
-    box-shadow: var.$black-color  1px 1px 3px;  
+    border: var.$adjusted-border-frame solid 15px;
+    box-shadow: var.$black-color 1px 1px 3px;
     border-radius: 5px;
-    
+  }
+  @media only screen and (min-width: 1450px) {
+    img {
+     
+      width: 800px;
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 1098px) {
+    img {
+      width: 400px;
+      height: auto;
+    }
   }
 
- 
-  @media only screen and (max-width: 718px) {
+  @media only screen and (max-width: 824px) {
     img {
-      width: 500px;  
-      height: auto;  
-      
+      width: 470px;
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 742px) {
+    img {
+      width: 450px;
+      height: auto;
     }
   }
   @media only screen and (max-width: 600px) {
     img {
-      width: 400px;  
-      height: auto;  
+      width: 400px;
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 506px) {
+    img {
+      width: 350px;
+      height: auto;
     }
   }
   @media only screen and (max-width: 471px) {
     img {
-      width: 250px;  
-      height: auto;  
+      width: 250px;
+      height: auto;
     }
   }
   @media only screen and (max-width: 324px) {
     img {
-        display: none; 
+      display: none;
     }
   }
 }
