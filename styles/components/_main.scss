@@ -1,0 +1,21 @@
+@use "../abstracts/colors" as var;
+
+.main{
+.maintitle{
+    
+     
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    padding: 4rem;
+    flex-grow: 1; //to make the main cover full size hight
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap column;
+        flex-grow: 100%;
+        min-height: 100vh;
+        align-items: center;
+     
+    }
+}

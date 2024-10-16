@@ -1,0 +1,27 @@
+@use "../abstracts/colors" as var;
+
+.header{
+    background-color: var.$elegance-1-hex;
+    padding: 3rem;
+   
+    p{
+        color: var.$elegance-5-hex;
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        span{
+            color: var.$elegance-2-hex;
+            &:hover{
+                color: var.$elegance-5-hex;
+            }
+        }
+
+    }
+}
+
+.footer{
+
+background-color: var.$elegance-4-hex;
+padding: 2rem;
+
+
+}

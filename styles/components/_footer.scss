@@ -1,0 +1,75 @@
+@use "../abstracts/colors" as var;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var.$elegance-4-hex;
+  padding: 1rem;
+  text-align: center;
+  color: var.$elegance-5-hex;
+
+  .footer-content {
+    margin-bottom: 1rem;
+
+    p {
+      margin: 0;
+ 
+    }
+    nav {
+      ul {
+        list-style-type: none; 
+        padding: 0;
+        li {
+         
+            line-height: 1.5;
+          a {
+            text-decoration: none; 
+            color: var.$elegance-5-hex; 
+
+            &:hover {
+              text-decoration: underline; 
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social-media {
+    margin-top: 1rem;
+
+    a {
+      margin: 0 5px;
+      text-decoration: none;
+      color: var.$elegance-5-hex; 
+
+      &:hover {
+        text-decoration: underline; 
+      }
+    }
+  }
+  @media only screen and (max-width: 718px) {
+    p , a , li {
+        font-size: medium;
+        margin: 0 12px;   
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    p , a , li {
+        font-size: small; 
+        margin: 0 9px;   
+    }
+  }
+  @media only screen and (max-width: 471px) {
+    p , a , li {
+        font-size:  small; 
+        margin: 0 7px;   
+    }
+  }
+  @media only screen and (max-width: 324px) {
+    p , a , li {
+       font-size: smaller; 
+       margin: 0 5px; 
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "../abstracts/colors" as var;
+
+.image {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  img {
+    width: 600px;  
+    height: auto;
+    border: var.$elegance-4-hsla solid 15px;  
+    box-shadow: var.$elegance-5-hslaNew 2px 3px 4px;  
+    border-radius: 5px;
+  }
+
+ 
+  @media only screen and (max-width: 718px) {
+    img {
+      width: 500px;  
+      height: auto;  
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    img {
+      width: 400px;  
+      height: auto;  
+    }
+  }
+  @media only screen and (max-width: 471px) {
+    img {
+      width: 250px;  
+      height: auto;  
+    }
+  }
+  @media only screen and (max-width: 324px) {
+    img {
+      width: 100px;  
+      height: auto;  
+    }
+  }
+}
