@@ -1,20 +1,22 @@
 @use "../abstracts/colors" as var;
 
 .header{
+    width: 100vw;
     background-color: var.$elegance-1-hex;
     padding: 3rem;
+    font-family: 'Kalam', sans-serif;
+   font-weight: bold;
    
     p{
         color: var.$elegance-5-hex;
         font-size: xx-large;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
         span{
             color: var.$elegance-2-hex;
             &:hover{
                 color: var.$elegance-5-hex;
             }
         }
-
     }
 }
 
@@ -22,6 +24,4 @@
 
 background-color: var.$elegance-4-hex;
 padding: 2rem;
-
-
-}
+}   

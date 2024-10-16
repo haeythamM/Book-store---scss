@@ -1,21 +1,58 @@
 @use "../abstracts/colors" as var;
 
-.main{
-.maintitle{
-    
-     
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.container {
+  display: flex;
+  flex-direction: column; 
+  flex-grow: 1;
+  min-height: 100vh; 
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-    padding: 4rem;
-    flex-grow: 1; //to make the main cover full size hight
-    .container{
 
-        display: flex;
-        flex-direction: column;
-        flex-flow: wrap column;
-        flex-grow: 100%;
-        min-height: 100vh;
-        align-items: center;
-     
+.main {
+  flex-grow: 1; 
+  text-align: justify;
+  padding: 3rem;
+
+  .maintitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .articles {
+    display: flex; 
+    max-width: 100%; 
+    margin-left: 1rem;
+
+    .sideBar {
+      display: block;
+      width: 40%; 
+      background-color: rgb(37, 37, 37);
+      color: aliceblue;
+      margin-right: 1rem;
+      padding: 1rem;
+      box-sizing: border-box;
+
+      .video {
+        width: 100%; 
+        height: auto; 
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.4;
+        color: aliceblue;
+        text-align: center;
+      }
     }
+
+    article {
+      flex-grow: 1; 
+      margin-left: 1rem; 
+    }
+  }
 }

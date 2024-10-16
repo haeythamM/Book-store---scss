@@ -1,0 +1,24 @@
+.sideBar {
+  display: block;
+   width: 40%;
+  float: left;
+  background-color: rgb(37, 37, 37);
+  color: aliceblue;
+  margin-right: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  .video {
+      width: 100%; 
+      height: auto; 
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  p {
+      font-size: 12px;
+      line-height: 1.4;
+      color: aliceblue;
+      text-align: center;
+  }
+}

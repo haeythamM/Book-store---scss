@@ -1,6 +1,24 @@
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
+@font-face {
+  font-family: "kakam";
+  src: url("../../assets/fonts/Kalam-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kakam";
+  src: url(../../assets/fonts/Kalam-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "kalam";
+  src: url(../../assets/fonts/Kalam-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,24 +30,60 @@ html, body {
   height: 100vh;
 }
 
-.main {
-  padding: 4rem;
-  flex-grow: 1;
-}
-.main .maintitle {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-.main .container {
+.container {
   display: flex;
   flex-direction: column;
-  flex-flow: wrap column;
-  flex-grow: 100%;
+  flex-grow: 1;
   min-height: 100vh;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1;
+  text-align: justify;
+  padding: 3rem;
+}
+.main .maintitle {
+  display: flex;
+  justify-content: center;
+}
+.main .articles {
+  display: flex;
+  max-width: 100%;
+  margin-left: 1rem;
+}
+.main .articles .sideBar {
+  display: block;
+  width: 40%;
+  background-color: rgb(37, 37, 37);
+  color: aliceblue;
+  margin-right: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.main .articles .sideBar .video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.main .articles .sideBar p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: aliceblue;
+  text-align: center;
+}
+.main .articles article {
+  flex-grow: 1;
+  margin-left: 1rem;
 }
 
 .footer {
   display: flex;
+  width: 100vw;
   flex-direction: column;
   background-color: #4a4633;
   padding: 1rem;
@@ -68,38 +122,48 @@ html, body {
   text-decoration: underline;
 }
 @media only screen and (max-width: 718px) {
-  .footer p, .footer a, .footer li {
+  .footer p,
+  .footer a,
+  .footer li {
     font-size: medium;
     margin: 0 12px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .footer p, .footer a, .footer li {
+  .footer p,
+  .footer a,
+  .footer li {
     font-size: small;
     margin: 0 9px;
   }
 }
 @media only screen and (max-width: 471px) {
-  .footer p, .footer a, .footer li {
+  .footer p,
+  .footer a,
+  .footer li {
     font-size: small;
     margin: 0 7px;
   }
 }
 @media only screen and (max-width: 324px) {
-  .footer p, .footer a, .footer li {
+  .footer p,
+  .footer a,
+  .footer li {
     font-size: smaller;
     margin: 0 5px;
   }
 }
 
 .header {
+  width: 100vw;
   background-color: #802922;
   padding: 3rem;
+  font-family: "Kalam", sans-serif;
+  font-weight: bold;
 }
 .header p {
   color: #bfbe9c;
   font-size: xx-large;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .header p span {
   color: #00bfae;
@@ -116,6 +180,9 @@ html, body {
 .image {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 .image img {
   width: 600px;
@@ -146,6 +213,29 @@ html, body {
   .image img {
     display: none;
   }
+}
+
+.sideBar {
+  display: block;
+  width: 40%;
+  float: left;
+  background-color: rgb(37, 37, 37);
+  color: aliceblue;
+  margin-right: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.sideBar .video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.sideBar p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: aliceblue;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
