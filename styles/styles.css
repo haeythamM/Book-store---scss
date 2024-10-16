@@ -8,7 +8,7 @@
 }
 
 html, body {
-  background-color: #BFBE9C;
+  background-color: #bfbe9c;
   height: 100vh;
 }
 
@@ -38,10 +38,10 @@ html, body {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #4A4633;
+  background-color: #4a4633;
   padding: 1rem;
   text-align: center;
-  color: #BFBE9C;
+  color: #bfbe9c;
 }
 .footer .footer-content {
   margin-bottom: 1rem;
@@ -58,7 +58,7 @@ html, body {
 }
 .footer .footer-content nav ul li a {
   text-decoration: none;
-  color: #BFBE9C;
+  color: #bfbe9c;
 }
 .footer .footer-content nav ul li a:hover {
   text-decoration: underline;
@@ -69,7 +69,7 @@ html, body {
 .footer .social-media a {
   margin: 0 5px;
   text-decoration: none;
-  color: #BFBE9C;
+  color: #bfbe9c;
 }
 .footer .social-media a:hover {
   text-decoration: underline;
@@ -104,19 +104,19 @@ html, body {
   padding: 3rem;
 }
 .header p {
-  color: #BFBE9C;
+  color: #bfbe9c;
   font-size: xx-large;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .header p span {
-  color: #00BFAE;
+  color: #00bfae;
 }
 .header p span:hover {
-  color: #BFBE9C;
+  color: #bfbe9c;
 }
 
 .footer {
-  background-color: #4A4633;
+  background-color: #4a4633;
   padding: 2rem;
 }
 
@@ -127,8 +127,8 @@ html, body {
 .image img {
   width: 600px;
   height: auto;
-  border: hsl(50, 18%, 24%) solid 15px;
-  box-shadow: hsl(50, 18%, 24%) 2px 3px 4px;
+  border: hsl(50, 11.41%, 79.56%) solid 15px;
+  box-shadow: hsl(0, 0%, 0%) 1px 1px 3px;
   border-radius: 5px;
 }
 @media only screen and (max-width: 718px) {
@@ -151,8 +151,7 @@ html, body {
 }
 @media only screen and (max-width: 324px) {
   .image img {
-    width: 100px;
-    height: auto;
+    display: none;
   }
 }
 

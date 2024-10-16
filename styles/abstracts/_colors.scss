@@ -1,21 +1,23 @@
 /* Color Theme Swatches in Hex */
 $elegance-1-hex: #802922;
-$elegance-2-hex: #00BFAE;
+$elegance-2-hex: #00bfae;
 $elegance-3-hex: #004040;
-$elegance-4-hex: #4A4633;
-$elegance-5-hex: #BFBE9C;
+$elegance-4-hex: #4a4633;
+$elegance-5-hex: #bfbe9c;
 
 /* Color Theme Swatches in RGBA */
-$elegance-1-rgba: rgba(127,41,33, 1);
-$elegance-2-rgba: rgba(0,191,173, 1);
-$elegance-3-rgba: rgba(0,63,63, 1);
-$elegance-4-rgba: rgba(73,70,50, 1);
-$elegance-5-rgba: rgba(191,190,156, 1);
+$elegance-1-rgba: rgba(127, 41, 33, 1);
+$elegance-2-rgba: rgba(0, 191, 173, 1);
+$elegance-3-rgba: rgba(0, 63, 63, 1);
+$elegance-4-rgba: rgba(73, 70, 50, 1);
+$elegance-5-rgba: rgba(191, 190, 156, 1);
 
 /* Color Theme Swatches in HSLA */
 $elegance-1-hsla: hsla(5, 58, 31, 1);
 $elegance-2-hsla: hsla(174, 100, 37, 1);
 $elegance-3-hsla: hsla(179, 100, 12, 1);
 $elegance-4-hsla: hsla(50, 18, 24, 1);
-$elegance-5-hslaNew: hsla(50, 18, 24, 1); //adjusts for images
 $elegance-5-hsla: hsla(58, 21, 68, 1);
+
+$adjusted-border-frame : hsl(50deg 11.41% 79.56%);
+$black-color:  hsl(0, 0%, 0%);
