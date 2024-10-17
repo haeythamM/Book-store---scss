@@ -17,7 +17,7 @@
   flex-grow: 1; 
   text-align: justify;
   padding: 3rem;
-  background-color: aquamarine;
+  
 
   .maintitle {
     display: flex;
@@ -49,8 +49,7 @@
       p {
         font-size: 12px;
         line-height: 1.4;
-        color: aliceblue;
-        text-align: center;
+        // color: aliceblue;
       }
     }
 
@@ -70,6 +69,13 @@
   padding-bottom: 1rem;
     }
   }
+  @media only screen and (max-width: 274px) {
+
+    .maintitle{
+     font-size: medium;
+
+    }
+   }
 
 }
 

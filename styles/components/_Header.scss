@@ -35,4 +35,13 @@
       font-size: small;
     }
   }
+  @media only screen and (max-width: 274px) {
+   P{
+    font-size: small;
+   }
+   .maintitle{
+    font-size: small;
+    color:red;
+   }
+  }
 }
