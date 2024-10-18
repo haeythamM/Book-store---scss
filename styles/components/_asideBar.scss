@@ -1,9 +1,11 @@
+@use "../abstracts/colors" as var;
+
 .sideBar {
   display: block;
   width: 40%;
   float: left;
-  background-color: rgb(37, 37, 37);
-  color: aliceblue;
+  background-color: var.$shadow-1;
+  color: var.$elegance-5-hsla;
   margin-right: 1rem;
   padding: 1rem;
   box-sizing: border-box;
@@ -18,7 +20,7 @@
   p {
     font-size: 12px;
     line-height: 1.4;
-    color: aliceblue;
+    color: var.$Cards-color;
     text-align: center;
   }
 }

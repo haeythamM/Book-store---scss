@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-
 <body>
     <div class="container">
         <header class="header">
-                        <p><span>Books</span> World</p>
-            <div class="rtsContainer">
-
-<ul>
-    <li>Books</li>
-    <li>Meetings</li>
-    <li>About</li>
-</ul>
-            </div>
+            <p><span class="hover-text">Books</span> World</p>
+            <nav class="rtsContainer" aria-label="Main navigation">
+                <ul>
+                    <li><a href="pages/Meetings.html">Meetings</a></li>
+                    <li><a href="pages/Books.html">Books</a></li>
+                    <li><a href="pages/About.html">About</a></li>
+                </ul>
+            </nav>
 
         </header>
         <main class="main">
@@ -29,11 +27,16 @@
             <div class="image">
                 <img src="assets/images/small.jpg"
                     srcset="assets/images/small.jpg 500w, assets/images/medium.jpg 1000w, assets/images/large.jpg 1500w"
-                    alt="Books Girl" loading="lazy" class="stroked-image">
+                    sizes="(max-width: 500px) 100vw, (max-width: 1000px) 50vw, 33vw" alt="Books Girl" loading="lazy"
+                    class="stroked-image">
+
             </div>
             <div class="artcles">
                 <aside class="sideBar">
-                    <video src="assets/media/7052871-hd_1080_1920_25fps.mp4" class="video"  type="video/mp4" controls> Your browser does not support the video tag.</video>
+                    <video class="video" controls>
+                        <source src="assets/media/7052871-hd_1080_1920_25fps.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <p>
                         Step into our virtual bookstore and feel the comfort of a timeless escape.
                         <strong>Ink &amp; Pages</strong> is where books and stories come to life, offering
@@ -70,31 +73,51 @@
                 </article>
                 <br>
                 <article class="artContaner">
-                    At <strong>Ink &amp; Pages</strong>, we believe that the perfect reading experience is elevated by the warmth of a cup of coffee in hand. Imagine immersing yourself in timeless classics or discovering the latest bestsellers while savoring your favorite brew. Our cozy atmosphere invites you to relax and enjoy the pleasure of reading, making each visit feel like a delightful escape.
-                    With a membership at <strong>Ink &amp; Pages</strong>, you unlock exclusive benefits that enhance your literary journey. Members enjoy special discounts on coffee and books, early access to new releases, and invitations to our book club meetings and author events. Whether you&apos;re seeking literary gems or simply a peaceful corner to sip your coffee and read, we provide a nurturing space for book lovers to gather and share their passion.
-                    Join us at <strong>Ink &amp; Pages</strong> and let the aroma of freshly brewed coffee and the magic of stories inspire you. Together, let&apos;s create memories that linger long after the last page is turned.
+                    At <strong>Ink &amp; Pages</strong>, we believe that the perfect reading experience is elevated by
+                    the warmth of a cup of coffee in hand. Imagine immersing yourself in timeless classics or
+                    discovering the latest bestsellers while savoring your favorite brew. Our cozy atmosphere invites
+                    you to relax and enjoy the pleasure of reading, making each visit feel like a delightful escape.
+                    With a membership at <strong>Ink &amp; Pages</strong>, you unlock exclusive benefits that enhance
+                    your literary journey. Members enjoy special discounts on coffee and books, early access to new
+                    releases, and invitations to our book club meetings and author events. Whether you&apos;re seeking
+                    literary gems or simply a peaceful corner to sip your coffee and read, we provide a nurturing space
+                    for book lovers to gather and share their passion.
+                    Join us at <strong>Ink &amp; Pages</strong> and let the aroma of freshly brewed coffee and the magic
+                    of stories inspire you. Together, let&apos;s create memories that linger long after the last page is
+                    turned.
                 </article>
                 <br>
                 <article class="artContaner">
-                    At <strong>Ink &amp; Pages</strong>, we believe that the perfect reading experience is elevated by the warmth of a cup of coffee in hand. Imagine immersing yourself in timeless classics or discovering the latest bestsellers while savoring your favorite brew. Our cozy atmosphere invites you to relax and enjoy the pleasure of reading, making each visit feel like a delightful escape.
-                    With a membership at <strong>Ink &amp; Pages</strong>, you unlock exclusive benefits that enhance your literary journey. Members enjoy special discounts on coffee and books, early access to new releases, and invitations to our book club meetings and author events. Whether you&apos;re seeking literary gems or simply a peaceful corner to sip your coffee and read, we provide a nurturing space for book lovers to gather and share their passion.
-                    Join us at <strong>Ink &amp; Pages</strong> and let the aroma of freshly brewed coffee and the magic of stories inspire you. Together, let&apos;s create memories that linger long after the last page is turned.
+                    At <strong>Ink &amp; Pages</strong>, we believe that the perfect reading experience is elevated by
+                    the warmth of a cup of coffee in hand. Imagine immersing yourself in timeless classics or
+                    discovering the latest bestsellers while savoring your favorite brew. Our cozy atmosphere invites
+                    you to relax and enjoy the pleasure of reading, making each visit feel like a delightful escape.
+                    With a membership at <strong>Ink &amp; Pages</strong>, you unlock exclusive benefits that enhance
+                    your literary journey. Members enjoy special discounts on coffee and books, early access to new
+                    releases, and invitations to our book club meetings and author events. Whether you&apos;re seeking
+                    literary gems or simply a peaceful corner to sip your coffee and read, we provide a nurturing space
+                    for book lovers to gather and share their passion.
+                    Join us at <strong>Ink &amp; Pages</strong> and let the aroma of freshly brewed coffee and the magic
+                    of stories inspire you. Together, let&apos;s create memories that linger long after the last page is
+                    turned.
                 </article>
                 <div class="image">
                     <img src="assets/images/maia-habegger-Th6p15WAPP0-unsplash.jpg"
-                    srcset="assets/images/small_1.jpg 500w, assets/images/medium_1.jpg 1000w, assets/images/large_1.jpg 1500w"
-               alt="Book Store" sizes="100" loading="lazy" class="stroked-image">
-            </div>
+                        srcset="assets/images/small_1.jpg 500w, assets/images/medium_1.jpg 1000w, assets/images/large_1.jpg 1500w"
+                        sizes="(max-width: 500px) 100vw, (max-width: 1000px) 50vw, 33vw" alt="Book Store" loading="lazy"
+                        class="stroked-image">
+
+                </div>
             </div>
         </main>
         <footer class="footer">
             <div class="footer-content">
                 <p>&copy; 2024 Books World Ink &amp; Pages. All rights reserved.</p>
-                <nav>
+                <nav aria-label="Footer navigation">
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="pages/PrivacyPolicy.html">Privacy Policy</a></li>
+                        <li><a href="/pages/TermsofService.html">Terms of Service</a></li>
+                        <li><a href="pages/About.html">About</a></li>
                     </ul>
                 </nav>
             </div>

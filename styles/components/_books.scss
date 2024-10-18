@@ -1,0 +1,68 @@
+@use "../abstracts/colors" as var;
+
+.booksPage {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.book-list {
+  display: block;
+}
+
+.book {
+  display: inline-block;
+  background-color: var.$Cards-color;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var.$black-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(30% - 20px);
+  margin: 20px;
+  vertical-align: top;
+
+  @media screen and (max-width: 1024px) {
+    width: calc(45% - 20px);
+  }
+
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 40px);
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var.$black-color;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .book-info {
+    padding: 15px;
+    display: block;
+
+    h2 {
+      font-size: 1.25em;
+      margin-bottom: 10px;
+      color: var.$shadow-1;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: var.$shadow-2;
+
+      strong {
+        color: var.$shadow-1;
+      }
+    }
+  }
+}
+
+main {
+  flex-grow: 1;
+  width: 100%;
+}

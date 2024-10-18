@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
   width: 100%;
   background-color: var.$elegance-1-hex;
   padding: 3rem;
@@ -29,6 +28,17 @@
     color: var.$elegance-5-rgba;
     font-size: large;
     padding-left: 1rem;
+    a {
+      text-decoration: none;
+      color: var.$elegance-5-hsla;
+      padding: 1rem;
+      &:hover {
+        color: var.$elegance-2-hsla;
+        padding: 1rem;
+        background-color: var.$hover_red;
+        border-radius: 10px;
+      }
+    }
   }
   @media only screen and (max-width: 466px) {
     li {
@@ -36,12 +46,31 @@
     }
   }
   @media only screen and (max-width: 274px) {
-   P{
-    font-size: small;
-   }
-   .maintitle{
-    font-size: small;
-    color:red;
-   }
+    P {
+      font-size: small;
+    }
+  }
+  .hover-text {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 120%;
+      background-color: var.$elegance-3-hsla;
+      font-family: "Kalam", sans-serif;
+      padding: 5px;
+      border: 3px solid var.$elegance-2-hsla;
+      border-radius: 10px;
+
+      display: none;
+    }
+
+    &:hover::after {
+      content: "Welcome to our store at any time";
+      display: block;
+    }
   }
 }

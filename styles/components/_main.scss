@@ -2,46 +2,78 @@
 
 .container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   flex-grow: 1;
-  min-height: 100vh; 
+  min-height: 100vh;
   align-items: center;
-  
-  // max-width: 1200px;
-  // margin: 0 auto;
-  
-  
+  .event-schedule {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    .leftContainer {
+      width: 40%;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      .event {
+        padding-bottom: 2em;
+      }
+    }
+    .rightContainer {
+      width: 40%;
+      video {
+        width: 500px;
+        height: auto;
+        margin: 1rem;
+      }
+    }
+    @media only screen and (max-width: 1088px) {
+      flex-direction: column;
+      .leftContainer {
+        width: 80%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
+      }
+      .rightContainer {
+        width: auto;
+        video {
+          padding-top: 0.6rem;
+          width: 400px;
+          height: auto;
+        }
+      }
+    }
+  }
 }
-
+.about {
+  width: 60%;
+}
+.booksPage {
+  display: flex;
+  width: 80%;
+}
 .main {
-  flex-grow: 1; 
+  flex-grow: 1;
   text-align: justify;
   padding: 3rem;
-  
-
   .maintitle {
     display: flex;
     justify-content: center;
   }
 
   .articles {
-    display: flex; 
-    // max-width: 100%; 
-    // margin-left: 1rem;
-
-
+    display: flex;
     .sideBar {
       display: block;
-      width: 40%; 
+      width: 40%;
       background-color: rgb(37, 37, 37);
       color: aliceblue;
-      // margin-right: 1rem;
+
       padding: 1rem;
-      box-sizing: border-box;
 
       .video {
-        // width: 100%; 
-        height: auto; 
+        height: auto;
         display: block;
         margin-bottom: 10px;
       }
@@ -49,34 +81,31 @@
       p {
         font-size: 12px;
         line-height: 1.4;
-        // color: aliceblue;
       }
     }
-
-
   }
   article {
-    // flex-grow: 1; 
-    margin-left: 1rem; 
+
+    margin-left: 1rem;
   }
-  .artContaner{
+  .artContaner {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
   @media only screen and (max-width: 1000px) {
-    .artContaner{ 
+    .artContaner {
       padding-top: 1rem;
-  padding-bottom: 1rem;
+      padding-bottom: 1rem;
     }
   }
   @media only screen and (max-width: 274px) {
-
-    .maintitle{
-     font-size: medium;
-
+    .maintitle {
+      font-size: medium;
     }
-   }
-
+  }
+  @media only screen and (max-width: 412px) {
+    video {
+      display: none;
+    }
+  }
 }
-
- 
