@@ -41,8 +41,9 @@ body {
 .container .event-schedule {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 .container .event-schedule .leftContainer {
   width: 40%;
@@ -75,7 +76,7 @@ body {
   }
   .container .event-schedule .rightContainer video {
     padding-top: 0.6rem;
-    width: 400px;
+    width: 350px;
     height: auto;
   }
 }
