@@ -20,9 +20,14 @@
   width: calc(30% - 20px);
   margin: 20px;
   vertical-align: top;
-
+  height: 600px;
+  @media screen and (max-width: 1275px) {
+    height: auto;
+    
+  }
   @media screen and (max-width: 1024px) {
     width: calc(45% - 20px);
+
   }
 
   @media screen and (max-width: 768px) {
